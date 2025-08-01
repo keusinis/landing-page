@@ -1,16 +1,104 @@
-a {
-    text-decoration: none;
+body {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'Courier New';
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.logo {
+    flex: 1 1 450px;
+    font-size: 24px;
+    color: #f9faf8;
+
 }
 
 .links {
     display: flex;
+    justify-content: end;
+    flex: 1 0 380px;
     list-style: none;
-    gap: 8px;
+    gap: 32px;
     margin: 0;
     padding: 0;
+}
+
+.header,
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f2937;
+    padding: 32px 20vw;
+    gap: 32px;
+}
+
+.left {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.right{
+    display: flex;
+    flex: 1 2 450px;
+    justify-content: right;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    object-fit: contain;
+}
+
+.left .title {
+    font-size: 48px;
+    margin: 0 0 8px 0;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.left .text {
+    text-wrap: normal;
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.hero button {
+    margin: auto 0;
+    cursor: pointer;
+    max-width: fit-content;
+    color: #e5e7eb;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: #3882f6;
+    border: none;
+    border-radius: 4px;
+    padding: 0.1em 0.9em;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.hero button:hover {
+    background-color: red;
+    /* box-shadow: 0 12 16 0 rgba(95, 0, 0, 0.13), 0 16px 50px 0 rgba(95, 0, 0, 0.514); */
+    box-shadow: 8px 4px 10px rgba(53, 1, 1, 0.342);
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: #e5e7eb7e;
+}
+.button p {
+    margin: auto 0;
 }
