@@ -11,13 +11,18 @@ a {
     text-decoration: none;
     color: #e5e7eb;
     font-size: 18px;
+    transition: text-shadow 0.5s ease, color 0.5s ease;
+}
+
+a:hover {
+    color: red;
+    text-shadow: 8px 4px 7px rgba(53, 1, 1, 0.548);
 }
 
 .logo {
     flex: 1 1 450px;
     font-size: 24px;
     color: #f9faf8;
-
 }
 
 .links {
@@ -46,7 +51,7 @@ a {
     justify-content: start;
 }
 
-.right{
+.right {
     display: flex;
     flex: 1 2 450px;
     justify-content: right;
@@ -84,12 +89,11 @@ a {
     border: none;
     border-radius: 4px;
     padding: 0.1em 0.9em;
-    transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.5s ease, background-color 1s ease;
 }
 
 .hero button:hover {
     background-color: red;
-    /* box-shadow: 0 12 16 0 rgba(95, 0, 0, 0.13), 0 16px 50px 0 rgba(95, 0, 0, 0.514); */
     box-shadow: 8px 4px 10px rgba(53, 1, 1, 0.342);
 }
 
@@ -99,6 +103,76 @@ a {
     gap: 8px;
     color: #e5e7eb7e;
 }
+
 .button p {
     margin: auto 0;
+}
+
+.info {
+    font-size: 32px;
+    text-align: center;
+    padding: 16px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.container .card {
+    width: 204px;
+    height: auto;
+    margin: 0;
+}
+
+.container img,
+.overlay,
+.overlay2 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    border: #1f2937 solid 2px;
+    box-shadow: 3px 4px 6px #1f293769;
+    margin-bottom: 8px;
+}
+
+.overlay,
+.overlay2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: #e5e7eb;
+    font-size: 20px;
+}
+
+.overlay {
+    opacity: 1;
+    transition: 1s ease;
+    background-color: #1f2937;
+}
+
+.overlay2 {
+    opacity: 0;
+    align-items: end;
+    transition: 0.5s ease;
+    color: white;
+}
+
+.card.hidden:hover .overlay {
+    opacity: 0;
+}
+
+.card.hidden:hover .overlay2 {
+    opacity: 1;
+}
+
+.card .text {
+    margin: 6px;
+    text-wrap: wrap;
+    text-align: center;
+    max-width: 200px;
 }
