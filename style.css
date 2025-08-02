@@ -19,16 +19,12 @@ a:hover {
     text-shadow: 8px 4px 7px rgba(53, 1, 1, 0.548);
 }
 
-.logo {
-    flex: 1 1 450px;
+.left.logo {
     font-size: 24px;
     color: #f9faf8;
 }
 
-.links {
-    display: flex;
-    justify-content: end;
-    flex: 1 0 380px;
+.right.links {
     list-style: none;
     gap: 32px;
     margin: 0;
@@ -40,12 +36,13 @@ a:hover {
     display: flex;
     justify-content: space-between;
     background-color: #1f2937;
-    padding: 32px 20vw;
     gap: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .left {
-    flex: 1 1 400px;
+    flex: 1 0 300px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -53,7 +50,7 @@ a:hover {
 
 .right {
     display: flex;
-    flex: 1 2 450px;
+    flex: 1 1 450px;
     justify-content: right;
 }
 
@@ -61,7 +58,9 @@ a:hover {
     width: 100%;
     height: auto;
     max-width: 450px;
+    min-width: 300px;
     object-fit: contain;
+    margin-bottom: 16px;
 }
 
 .left .title {
@@ -102,6 +101,7 @@ a:hover {
     flex-wrap: wrap;
     gap: 8px;
     color: #e5e7eb7e;
+    margin-bottom: 16px;
 }
 
 .button p {
@@ -109,9 +109,12 @@ a:hover {
 }
 
 .info {
-    font-size: 32px;
+    font-size: 36px;
     text-align: center;
-    padding: 16px;
+    color: #1f2937;
+    font-weight: 900;
+    margin-bottom: 32px;
+    margin-top: 64px;
 }
 
 .container {
@@ -119,6 +122,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
+    margin-bottom: 32px;
 }
 
 .container .card {
@@ -134,7 +138,7 @@ a:hover {
     width: 200px;
     height: 200px;
     border-radius: 8px;
-    border: #1f2937 solid 2px;
+    border: #3882f6 solid 2px;
     box-shadow: 3px 4px 6px #1f293769;
     margin-bottom: 8px;
 }
@@ -153,13 +157,14 @@ a:hover {
     opacity: 1;
     transition: 1s ease;
     background-color: #1f2937;
+    font-style: italic;
 }
 
 .overlay2 {
     opacity: 0;
     align-items: end;
     transition: 0.5s ease;
-    color: white;
+    font-weight: 800;
 }
 
 .card.hidden:hover .overlay {
@@ -175,4 +180,32 @@ a:hover {
     text-wrap: wrap;
     text-align: center;
     max-width: 200px;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    min-height: 10em;
+    background-color: #e5e7eb;
+}
+
+.quote .text {
+    flex: 1 1 800px;
+    color: #1f2937;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: justify;
+    padding: 72px;
+}
+
+.quote .text span {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+}
+
+.margin {
+    max-width: 300px;
+    flex: 1 5 300px;
 }
