@@ -90,11 +90,11 @@ button {
     border: none;
     border-radius: 4px;
     padding: 0.1em 0.9em;
-    transition: box-shadow 0.5s ease, background-color 1s ease;
+    transition: box-shadow 0.5s ease, background-color 0.5s ease;
 }
 
 button:hover {
-    background-color: red;
+    background-color: rgb(192, 23, 23);
     box-shadow: 8px 4px 10px rgba(53, 1, 1, 0.342);
 }
 
