@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     font-family: Roboto, 'Courier New';
@@ -32,9 +33,10 @@ a:hover {
 }
 
 .header,
-.hero {
+.hero,
+.footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #1f2937;
     gap: 32px;
     padding-top: 32px;
@@ -63,21 +65,21 @@ a:hover {
     margin-bottom: 16px;
 }
 
-.left .title {
+.head {
     font-size: 48px;
     margin: 0 0 8px 0;
     font-weight: 900;
     color: #f9faf8;
 }
 
-.left .text {
+.body {
     text-wrap: normal;
     color: #e5e7eb;
     font-size: 18px;
     margin-bottom: 8px;
 }
 
-.hero button {
+button {
     margin: auto 0;
     cursor: pointer;
     max-width: fit-content;
@@ -91,12 +93,12 @@ a:hover {
     transition: box-shadow 0.5s ease, background-color 1s ease;
 }
 
-.hero button:hover {
+button:hover {
     background-color: red;
     box-shadow: 8px 4px 10px rgba(53, 1, 1, 0.342);
 }
 
-.button {
+.hero-button {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -192,7 +194,7 @@ a:hover {
 .quote .text {
     flex: 1 1 800px;
     color: #1f2937;
-    font-size: 24px;
+    font-size: 20px;
     font-style: italic;
     font-weight: 100;
     text-align: justify;
@@ -200,6 +202,7 @@ a:hover {
 }
 
 .quote .text span {
+    margin-top: 16px;
     display: block;
     font-weight: bold;
     text-align: right;
@@ -208,4 +211,38 @@ a:hover {
 .margin {
     max-width: 300px;
     flex: 1 5 300px;
+}
+
+.call-to-action {
+    max-width: 800px;
+    display: flex;
+    gap: 32px;
+    background-color: #3882f6;
+    margin: 32px auto;
+    padding: 24px 32px;
+    color: #f9faf8;
+    border-radius: 8px;
+}
+
+.call-to-action-button {
+    text-wrap: nowrap;
+    border: 1px solid #f9faf8;
+}
+
+.text .head {
+    font-size: 32px;
+}
+.text .body {
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer {
+    font-size: 12px;
+    padding: 16px;
+    color: #f9faf8;
+}
+.footer a {
+    text-decoration: underline;
+    font-size: 12px;
 }
