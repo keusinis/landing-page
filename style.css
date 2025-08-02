@@ -192,7 +192,8 @@ button:hover {
 }
 
 .quote .text {
-    flex: 1 1 800px;
+    max-width: 40vw;
+    flex: 1 1 auto;
     color: #1f2937;
     font-size: 20px;
     font-style: italic;
@@ -209,7 +210,6 @@ button:hover {
 }
 
 .margin {
-    max-width: 300px;
     flex: 1 5 300px;
 }
 
